@@ -1,0 +1,20 @@
+% ========================================================================
+% LaTeX Code for Consolidated 4-Dataset Classification Results
+% (HHAR, MotionSense, Shoaib from Original Paper + UCI HAR from Our Work)
+% ========================================================================
+\begin{table*}[ht]
+\centering
+\caption{Classification Performance (Macro F1-Score) Comparison Across Four Benchmarks}
+\label{tab:consolidated_results}
+\begin{tabular}{l|cc|cc|cc|cc}
+\hline
+\textbf{Dataset} & \multicolumn{2}{c|}{\textbf{HHAR}} & \multicolumn{2}{c|}{\textbf{MotionSense}} & \multicolumn{2}{c|}{\textbf{Shoaib}} & \multicolumn{2}{c}{\textbf{UCI HAR (Ours)}} \\ 
+\textbf{Test Subject} & \textbf{Seen} & \textbf{Unseen} & \textbf{Seen} & \textbf{Unseen} & \textbf{Seen} & \textbf{Unseen} & \textbf{Seen} & \textbf{Unseen} \\ \hline
+Random Forest & 0.97 & 0.67 & 0.84 & 0.58 & 0.98 & 0.67 & 0.93 & 0.92 \\
+SVM & 0.91 & 0.47 & 0.82 & 0.42 & 0.92 & 0.56 & \textbf{0.95} & \textbf{0.94} \\
+DNN & 0.98 & 0.61 & 0.81 & 0.38 & 0.97 & 0.64 & 0.98 & 0.58 \\
+\textbf{LLaMA-3 (Base)} & -- & 0.65 & -- & 0.61 & -- & 0.67 & -- & 0.63 \\
+\textbf{LLaMA-3 (Fine-tuned)} & 0.83 & \textbf{0.75} & 0.77 & \textbf{0.65} & 0.79 & \textbf{0.71} & 0.79 & \textbf{0.80} \\
+\hline
+\end{tabular}
+\end{table*}

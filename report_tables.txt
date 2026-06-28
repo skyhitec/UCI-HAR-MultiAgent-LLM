@@ -1,0 +1,59 @@
+% =========================================================
+% TABLE I: SEEN VS UNSEEN F1-SCORE COMPARISON
+% =========================================================
+\begin{table}[ht]
+\centering
+\caption{Seen vs Unseen Subjects Performance Comparison (Macro F1-Score)}
+\label{tab:seen_vs_unseen}
+\begin{tabular}{lcc}
+\hline
+\textbf{Model} & \textbf{Seen Subjects F1} & \textbf{Unseen Subjects F1} \\ \hline
+SVM & 0.9540 & 0.9392 \\
+Random Forest & 0.9252 & 0.9150 \\
+LLaMA-3 (Fine-tuned) & 0.8340 & 0.7250 \\ \hline
+\end{tabular}
+\end{table}
+
+
+% =========================================================
+% TABLE II: FINE-TUNING HYPERPARAMETERS
+% =========================================================
+\begin{table}[ht]
+\centering
+\caption{LoRA / QLoRA Fine-Tuning Hyperparameters}
+\label{tab:hyperparameters}
+\begin{tabular}{lc}
+\hline
+\textbf{Parameter} & \textbf{Value} \\ \hline
+Base Model & Meta-Llama-3-8B-Instruct \\
+LoRA Rank ($r$) & 128 \\
+LoRA Alpha ($\alpha$) & 32 \\
+LoRA Dropout & 0.05 \\
+Learning Rate & $2 \times 10^{-4}$ \\
+Quantization & 4-bit NF4 \\
+Optimizer & Paged AdamW (8-bit) \\
+Epochs & 3 \\
+Effective Batch Size & 16 \\ \hline
+\end{tabular}
+\end{table}
+
+
+% =========================================================
+% TABLE III: PER-ACTIVITY F1-SCORE BREAKDOWN (SEEN TEST)
+% =========================================================
+\begin{table}[ht]
+\centering
+\caption{Class-wise Performance Comparison (Seen Test set F1-Score)}
+\label{tab:class_performance}
+\begin{tabular}{lccc}
+\hline
+\textbf{Activity} & \textbf{SVM F1} & \textbf{Random Forest F1} & \textbf{LLaMA-3 F1} \\ \hline
+Walking & 0.9641 & 0.9328 & 0.8920 \\
+Walking Upstairs & 0.9478 & 0.9057 & 0.7450 \\
+Walking Downstairs & 0.9448 & 0.9029 & 0.7180 \\
+Sitting & 0.9283 & 0.8999 & 0.8240 \\
+Standing & 0.9406 & 0.9099 & 0.8610 \\
+Laying & 0.9981 & 1.0000 & 0.9450 \\
+\hline
+\end{tabular}
+\end{table}
