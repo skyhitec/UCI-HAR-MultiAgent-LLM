@@ -1,12 +1,20 @@
 # On-Device Large Multi-Modal Agent for Human Activity Recognition (UCI HAR Extension)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://skyhitec-uci-har-multiagent-llm-app-vxadvl.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **Summer Research Internship Project**  
 > **Student Investigator:** Shudhanshu Yadav  
 > **Institution:** Central University of Andhra Pradesh & DA-IICT  
+
+---
+
+## 🌐 Live Interactive Dashboard Demo
+🎮 **Access the Live Web Application here:**  
+👉 **[https://skyhitec-uci-har-multiagent-llm-app-vxadvl.streamlit.app/](https://skyhitec-uci-har-multiagent-llm-app-vxadvl.streamlit.app/)**
+
+The live Streamlit dashboard provides interactive 6-channel IMU telemetry visualization, real-time activity predictions, and step-by-step Chain-of-Thought (CoT) multi-agent reasoning logs.
 
 ---
 
@@ -23,7 +31,7 @@ While the original paper focused on HHAR, MotionSense, and Shoaib datasets, this
 
 - 🐍 **Complete Replication Pipeline (`final_pipeline.py`):** 1800+ lines of modular Python code implementing end-to-end signal filtering, 561-feature extraction, baseline classifiers (SVM, RF, DNN, LSTM), and QLoRA SFT configuration.
 - 🤖 **Interactive Multi-Task Demo (`demo_inference.py`):** 430+ line inference script showcasing classification, step-by-step Chain-of-Thought (CoT) reasoning, posture QA, and personalized health recommendations.
-- 📊 **Glassmorphism Web Dashboard (`app.py`):** 600+ line interactive Streamlit application with live telemetry simulation and real-time multi-agent reasoning logs.
+- 📊 **Glassmorphism Web Dashboard (`app.py`):** 600+ line interactive Streamlit application deployed live at [Streamlit Cloud](https://skyhitec-uci-har-multiagent-llm-app-vxadvl.streamlit.app/).
 - 🔄 **LangChain & LangGraph Orchestration (`langgraph_har_pipeline.py`):** 6-node stateful agent architecture with conditional routing and dynamic memory.
 - 📑 **IEEE PDF Generator (`generate_pdf_report.py`):** Automated compilation script generating the 10-page academic technical report (`HAR_Project_Report.pdf`).
 
@@ -62,7 +70,7 @@ pip install -r requirements.txt
 python final_pipeline.py
 ```
 
-### 3. Launching the Interactive Web Dashboard
+### 3. Launching the Interactive Web Dashboard Locally
 ```bash
 streamlit run app.py
 ```
