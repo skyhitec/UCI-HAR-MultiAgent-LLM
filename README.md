@@ -77,5 +77,17 @@ streamlit run app.py
 
 ---
 
+## Result and Working Pipelines
+<img width="2684" height="1476" alt="fig7_all_activity_signals" src="https://github.com/user-attachments/assets/3640a940-d284-4ad2-8693-d67cef5a3401" />
+
+<img width="2234" height="931" alt="fig4_seen_vs_unseen" src="https://github.com/user-attachments/assets/e44f448b-f4bc-4d24-98c8-38f98f81d01d" />
+<img width="1024" height="1024" alt="fig17_finetuning_pipeline_architecture" src="https://github.com/user-attachments/assets/c1006d2a-c1a2-4fe1-ac04-34353047ebec" />
+<img width="1024" height="1024" alt="fig18_complete_project_architecture" src="https://github.com/user-attachments/assets/0ca07903-123f-4cf7-885a-20dd7b78c64a" />
+
+---
+
+
+---
+
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
